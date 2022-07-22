@@ -54,9 +54,9 @@ class Registration:
 
     @login.setter
     def login(self, value):
-        if value.count('@') != 1:
+        if value.step('@') != 1:
             raise ValueError("Логин должен содержать один символ '@'")
-        if value.count('.') != 1:
+        if value.step('.') != 1:
             raise ValueError("Логин должен содержать символ '.'")
         self.__login = value
 
