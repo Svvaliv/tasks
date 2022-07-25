@@ -11,7 +11,7 @@ class Registration:
 
     @staticmethod
     def is_include_digits(value):
-        "Проверяем, содержаться ли цифры в пароле"
+        "Проверяем, содержатся ли цифры в пароле"
         for digit in digits:
             if digit in value:
                 return True
@@ -19,7 +19,7 @@ class Registration:
 
     @staticmethod
     def is_include_all_register(value):
-        "Проверяем, содержаться ли буквы в верхнем и нижнем регистре в пароле"
+        "Проверяем, содержатся ли буквы в верхнем и нижнем регистре в пароле"
         count_lower = 0
         count_upper = 0
         for symbol in value:
@@ -41,7 +41,7 @@ class Registration:
 
     @staticmethod
     def check_password_dictionary(value):
-        "Проверяем, не находиться ли пароль в хранилище простых паролей"
+        "Проверяем, не находится ли пароль в хранилище простых паролей"
         with open('easy_passwords.txt', encoding='utf-8') as easy:
             for i in easy.readlines():
                 if value == i.strip():
