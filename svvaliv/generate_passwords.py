@@ -15,9 +15,10 @@ def generate_password(length):
     return password
 
 
-def generate_passwords(count, length):
-    return [generate_password(length) for _ in range(count)]  # Создаём список из заданного количества паролей
+def generate_passwords(quantity, length):
+    return [generate_password(length) for _ in range(quantity)]  # Создаём список из заданного количества паролей
 
 
-quantity, length = map(int, input().split())
+quantity = int(input('Введите количество паролей'))
+length = int(input('Введите длину паролей'))
 print(*generate_passwords(quantity, length), sep='\n')
