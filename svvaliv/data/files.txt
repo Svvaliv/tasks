@@ -1,0 +1,7 @@
+input.txt 3000 B
+scratch.zip 300 MB
+output.txt 1 KB
+temp.txt 4 KB
+boy.bmp 2000 KB
+mario.bmp 1 MB
+data.zip 900 MB
