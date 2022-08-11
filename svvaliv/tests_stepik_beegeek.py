@@ -14,6 +14,8 @@
 '''
 
 def testing_lesson(filename: str):
+    '''Функция распаковывет архив с тестовыми данными, затем выполняет код из каждого файла и выводит
+    результат выполнения вашего кода и ожидаемый результат'''
     from zipfile import ZipFile
 
     with ZipFile(filename) as z:
