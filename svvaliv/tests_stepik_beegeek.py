@@ -39,6 +39,11 @@ def testing_lesson(filename: str):
 filename = 'data/tests/tests_2777710.zip'
 testing_lesson(filename)
 
+
+# ==================================================
+# Testing regex
+# ==================================================
+
 def testing_lesson_regex(filename: str, regex):
     '''Функция применяет регулярное выражение к строке из файла, а потом сравнивает ваш результат и результат вывода'''
     from zipfile import ZipFile
